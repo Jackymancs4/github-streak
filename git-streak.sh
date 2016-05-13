@@ -2,7 +2,7 @@
 
 IFS='
 '
-cd commit
+cd ../github-streak-result/
 
 for file in `seq 1 365`; do
 
@@ -14,7 +14,7 @@ for file in `seq 1 365`; do
 	#git add commit/$file.txt
 
 	COUNTER=1
-	for date in `cat ../file/$file.txt`; do
+	for date in `cat ../github-streak/file/$file.txt`; do
 		echo $date
 
 		GIT_AUTHOR_DATE=$date
